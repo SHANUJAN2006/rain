@@ -16,7 +16,7 @@ module tt_um_rain_alert (
     assign uio_oe  = 8'b00000000;
 
     // Input Sensors from Farmers' Field:
-    wire [3:0] humidity      = ui_in[3:0]; // 4-bit Humidity (0 to 15)
+    wire [3:0] humidity      = ui_in[3:0]; // Pins 3..0: Humidity (0 to 15)
     wire       low_pressure  = ui_in[4];   // Pin 4: Pressure drop sensor
     wire       rain_detected = ui_in[5];   // Pin 5: Raindrop sensor
     wire       dark_cloud    = ui_in[6];   // Pin 6: Dark cloud sensor
@@ -29,14 +29,14 @@ module tt_um_rain_alert (
             rain_warning     <= 1'b0;
             heavy_rain_alarm <= 1'b0;
         end else if (ena) begin
-            // 1. மழை வருவதற்கான முன்னெச்சரிக்கை
+            // 1. Rain warning logic
             if ((humidity >= 4'd10) && (low_pressure || dark_cloud)) begin
                 rain_warning <= 1'b1;
             end else begin
                 rain_warning <= 1'b0;
             end
 
-            // 2. மழை ஆரம்பம் / பலத்த மழை எச்சரிக்கை
+            // 2. Heavy rain alarm logic
             if (rain_detected || ((humidity >= 4'd13) && low_pressure && dark_cloud)) begin
                 heavy_rain_alarm <= 1'b1;
             end else begin
