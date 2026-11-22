@@ -28,36 +28,37 @@ pinout:
 pinout:
  # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
-  pinout:
-  # Inputs
-  ui[0]: "Humidity bit 0"
-  ui[1]: "Humidity bit 1"
-  ui[2]: "Humidity bit 2"
-  ui[3]: "Humidity bit 3"
-  ui[4]: "Low pressure sensor"
-  ui[5]: "Raindrop sensor"
-  ui[6]: "Dark cloud sensor"
-  ui[7]: ""
+   pinout:
+    # Inputs
+    ui[0]: "Humidity bit 0"
+    ui[1]: "Humidity bit 1"
+    ui[2]: "Humidity bit 2"
+    ui[3]: "Humidity bit 3"
+    ui[4]: "Low pressure sensor"
+    ui[5]: "Raindrop sensor"
+    ui[6]: "Dark cloud sensor"
+    ui[7]: ""
 
-  # Outputs
-  uo[0]: "Rain warning LED"
-  uo[1]: "Heavy rain alarm"
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+    # Outputs
+    uo[0]: "Rain warning LED"
+    uo[1]: "Heavy rain alarm"
+    uo[2]: ""
+    uo[3]: ""
+    uo[4]: ""
+    uo[5]: ""
+    uo[6]: ""
+    uo[7]: ""
 
-  # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+    # Bidirectional pins
+    uio[0]: ""
+    uio[1]: ""
+    uio[2]: ""
+    uio[3]: ""
+    uio[4]: ""
+    uio[5]: ""
+    uio[6]: ""
+    uio[7]: ""
+
 "
 
 
