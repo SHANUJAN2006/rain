@@ -30,37 +30,28 @@ pinout:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
    pinout:
    pinout:
+ # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
   # Inputs
-  ui: "Humidity bit 0"
-  ui: "Humidity bit 1"
-  ui: "Humidity bit 2"
-  ui: "Humidity bit 3"
-  ui: "Low pressure sensor"
-  ui: "Raindrop sensor"
-  ui: "Dark cloud sensor"
-  ui: ""
+  ui[0]: "Humidity bit 0"
+  ui[1]: "Humidity bit 1"
+  ui[2]: "Humidity bit 2"
+  ui[3]: "Humidity bit 3"
+  ui[4]: "Low pressure sensor"
+  ui[5]: "Raindrop sensor"
+  ui[6]: "Dark cloud sensor"
+  ui[7]: ""
 
   # Outputs
-  uo: "Rain warning LED"
-  uo: "Heavy rain alarm"
-  uo: ""
-  uo: ""
-  uo: ""
-  uo: ""
-  uo: ""
-  uo: ""
-
-  # Bidirectional pins
-  uio: ""
-  uio: ""
-  uio: ""
-  uio: ""
-  uio: ""
-  uio: ""
-  uio: ""
-  uio: ""
-"
-
+  uo[0]: "Rain warning LED"
+  uo[1]: "Heavy rain alarm"
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
 
 # Do not change!
 yaml_version: 6
